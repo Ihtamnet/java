@@ -20,7 +20,8 @@ public class HelloWorld {
         //GetPT8();
         //PrintStrNumTime();
         //SquareCircle();
-        BeerForPeople();
+        //BeerForPeople();
+        MStoKMHround();
     }
     
     //пошук другого мінімального числа 
@@ -117,6 +118,15 @@ public class HelloWorld {
         int countPeoples = sc.nextInt();
         
         System.out.println(1.0*countPeoples/countBotles);
+    }
+    
+    //переведення м/с у км/год з округленням
+    private static void MStoKMHround()
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        int ms=sc.nextInt();
+        System.out.println(Math.round(ms*3.6));
     }
     
 }

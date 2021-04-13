@@ -21,7 +21,25 @@ public class HelloWorld {
         //PrintStrNumTime();
         //SquareCircle();
         //BeerForPeople();
-        MStoKMHround();
+        //MStoKMHround();
+        GlaasWater();
+    }
+    
+    //стакан води наполовину повний чи наполовину порожній? :)
+    private static void GlaasWater()
+    {
+        double glass = 0.5;
+        
+        Scanner sc=new Scanner(System.in);
+        boolean po=sc.nextBoolean();
+        
+        double r;
+        if (po)
+            r=Math.ceil(glass);
+        else 
+            r=Math.floor(glass);
+        
+        System.out.println(r);
     }
     
     //пошук другого мінімального числа 

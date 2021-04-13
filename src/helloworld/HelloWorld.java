@@ -17,7 +17,8 @@ public class HelloWorld {
     public static void main(String[] args) {
         //Min2();        
         //GetPair1_15();
-        GetPT8();
+        //GetPT8();
+        PrintStrNumTime();
     }
     
     //пошук другого мінімального числа 
@@ -71,6 +72,27 @@ public class HelloWorld {
                 System.out.print("8");
             System.out.println("");
         }
+    }
+    
+    //виведення вказного рядка вказану кількість разів
+    private static void PrintStrNumTime()
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.print("Enter string: ");
+        String str=sc.nextLine();
+        
+        System.out.print("Enter number: ");
+        int number=sc.nextInt();
+        
+        if (number >=0 && number <=5){            
+            for(int i=1; i<=number; i++){
+                System.out.println(str);
+            }
+        }
+        
+        
+        
     }
     
 }

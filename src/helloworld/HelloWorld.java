@@ -16,7 +16,8 @@ public class HelloWorld {
     
     public static void main(String[] args) {
         //Min2();        
-        GetPair1_15();
+        //GetPair1_15();
+        GetPT8();
     }
     
     //пошук другого мінімального числа 
@@ -57,6 +58,18 @@ public class HelloWorld {
         for(i=1; i<=15; i++){
             if (i%2 == 0)
                 System.out.print(i+" ");
+        }
+    }
+    
+    //прямокутний трикутницк з 8
+    private static void GetPT8()
+    {
+        int r, c;
+        
+        for(r=1; r<=10; r++){
+            for(c=1; c<=r; c++)
+                System.out.print("8");
+            System.out.println("");
         }
     }
     

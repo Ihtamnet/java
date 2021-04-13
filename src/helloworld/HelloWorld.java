@@ -33,11 +33,11 @@ public class HelloWorld {
         Scanner sc=new Scanner(System.in);
         boolean po=sc.nextBoolean();
         
-        double r;
+        int r;
         if (po)
-            r=Math.ceil(glass);
+            r=(int)Math.ceil(glass);
         else 
-            r=Math.floor(glass);
+            r=(int)Math.floor(glass);
         
         System.out.println(r);
     }

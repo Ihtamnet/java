@@ -85,14 +85,14 @@ public class HelloWorld {
         System.out.print("Enter number: ");
         int number=sc.nextInt();
         
-        if (number >=0 && number <=5){            
-            for(int i=1; i<=number; i++){
+        if (number >=0 && number <=5){  
+            int i=1;
+            do{
                 System.out.println(str);
-            }
-        }
-        
-        
-        
+                i++;
+            } while(i<number);
+        }else
+            System.out.println(str);                        
     }
     
 }

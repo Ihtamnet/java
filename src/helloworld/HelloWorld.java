@@ -18,7 +18,8 @@ public class HelloWorld {
         //Min2();        
         //GetPair1_15();
         //GetPT8();
-        PrintStrNumTime();
+        //PrintStrNumTime();
+        SquareCircle();
     }
     
     //пошук другого мінімального числа 
@@ -93,6 +94,17 @@ public class HelloWorld {
             } while(i<=number);
         }else
             System.out.println(str);                        
+    }
+    
+    //площа круга з відкиданням дробової частини у результаті
+    private static void SquareCircle()
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        int r=sc.nextInt();
+        if (r>0){
+            System.out.println((int)(3.14*r*r));
+        }
     }
     
 }

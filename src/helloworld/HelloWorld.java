@@ -19,7 +19,8 @@ public class HelloWorld {
         //GetPair1_15();
         //GetPT8();
         //PrintStrNumTime();
-        SquareCircle();
+        //SquareCircle();
+        BeerForPeople();
     }
     
     //пошук другого мінімального числа 
@@ -105,6 +106,17 @@ public class HelloWorld {
         if (r>0){
             System.out.println((int)(3.14*r*r));
         }
+    }
+    
+    //пиво для людей
+    private static void BeerForPeople()
+    {
+        Scanner sc=new Scanner(System.in); 
+        
+        int countBotles  = sc.nextInt();
+        int countPeoples = sc.nextInt();
+        
+        System.out.println(1.0*countPeoples/countBotles);
     }
     
 }

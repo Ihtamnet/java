@@ -15,7 +15,8 @@ public class HelloWorld {
     private static int MAX_C_ARR=20;
     
     public static void main(String[] args) {
-        Min2();        
+        //Min2();        
+        GetPair1_15();
     }
     
     //пошук другого мінімального числа 
@@ -49,6 +50,14 @@ public class HelloWorld {
         System.out.println(min2);
     }
     
-    //
+    //виведеня парних чисел від 1 до 15
+    private static void GetPair1_15()
+    {        
+        int i;        
+        for(i=1; i<=15; i++){
+            if (i%2 == 0)
+                System.out.print(i+" ");
+        }
+    }
     
 }

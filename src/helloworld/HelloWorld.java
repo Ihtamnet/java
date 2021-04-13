@@ -85,7 +85,7 @@ public class HelloWorld {
         System.out.print("Enter number: ");
         int number=sc.nextInt();
         
-        if (number >=0 && number <=5){  
+        if (number>0 && number<5){  
             int i=1;
             do{
                 System.out.println(str);

@@ -90,7 +90,7 @@ public class HelloWorld {
             do{
                 System.out.println(str);
                 i++;
-            } while(i<number);
+            } while(i<=number);
         }else
             System.out.println(str);                        
     }
